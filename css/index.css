@@ -1,8 +1,100 @@
- {
-  box-sizing: border-box;
-}
+/*** MOBILE FIRST VERSION ***/
 
 body {
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
   width: 100vw;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+}
+
+header {
+  height: 18%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#logo-container {
+  display: flex;
+  width: 100%;
+  height: 67%;
+  justify-content: center;
+  align-items: center;
+}
+
+.fit-img {
+  width: 140px;
+  height: 60px;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 33%;
+}
+
+.nav-link {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px #f2f2f2 solid;
+}
+
+nav > a:hover {
+  border-bottom: 2px #0065fc solid;
+  color: #0065fc;
+}
+
+a {
+  text-decoration: none;
+}
+a:visited {
+  color: inherit;
+}
+
+/*** TABLET VERSION ***/
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 1.25rem;
+    padding: 0% 4%;
+  }
+  header {
+    flex-direction: row;
+  }
+  #logo-container {
+    display: flex;
+    width: 76%;
+    height: 100%;
+    justify-content: start;
+  }
+  .fit-img {
+    width: 140px;
+    height: 70px;
+  }
+  nav {
+    width: 24%;
+    height: 70%;
+    font-size: 1rem;
+  }
+  .nav-link {
+    border-bottom: inherit;
+    border-top: 4px #f2f2f2 solid;
+  }
+  nav > a:hover {
+    border-bottom: inherit;
+    border-top: 4px #0065fc solid;
+  }
+}
+
+/*** DESKTOP VERSION ***/
+@media screen and (min-width: 992px) {
+  body {
+    font-size: 1.5rem;
+  }
 }
