@@ -4,6 +4,15 @@ button,
 submit {
   border: none;
 }
+h4 {
+  margin: 0;
+}
+.deep-blue {
+  color: #0065fc;
+}
+.grey {
+  color: #f2f2f2;
+}
 
 /*** MOBILE FIRST VERSION ***/
 
@@ -69,11 +78,10 @@ main {
   box-sizing: border-box;
   width: 100%;
   height: 100%;
-  padding: 0 5%;
 }
 
-section {
-  padding: 4% 0;
+#search {
+  padding: 4% 5%;
 }
 
 #title {
@@ -122,11 +130,11 @@ section {
   display: none;
 }
 
-#filtres-container {
+#filters-container {
   display: flex;
   flex-direction: column;
 }
-#filtres-text {
+#filters-text {
   font-size: 0.9rem;
   font-weight: bold;
 }
@@ -209,6 +217,62 @@ section {
   font-size: 75%;
 }
 
+#hosting {
+  display: flex;
+  flex-direction: column;
+}
+#most-popular {
+  background-color: #f2f2f2;
+  padding: 4% 5%;
+}
+#most-popular-header {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.most-popular-card {
+  display: flex;
+  flex-direction: row;
+  height: 156px;
+  padding: 5px;
+  background-color: white;
+  border-radius: 25px;
+  margin: 15px 0;
+}
+.most-popular-card-img {
+  width: 40%;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  border-radius: 20px 0 0 20px;
+  overflow-y: hidden;
+}
+
+.most-popular-card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2%;
+  width: 60%;
+  height: 100%;
+  padding-left: 5%;
+  box-sizing: border-box;
+}
+
+.most-popular-card-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.most-popular-card-content p {
+  font-size: 0.8rem;
+}
+.most-popular-card-stars {
+  font-size: 0.7rem;
+}
+
 /*** TABLET VERSION ***/
 @media screen and (min-width: 768px) {
   body {
@@ -242,8 +306,12 @@ section {
     border-top: 4px #0065fc solid;
   }
 
-  section {
-    padding: 2% 0;
+  main {
+    padding: 2% 4%;
+  }
+
+  #search {
+    padding: 0;
   }
 
   #search-bar {
@@ -265,7 +333,7 @@ section {
     margin-left: 2%;
   }
 
-  #filtres-container {
+  #filters-container {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
