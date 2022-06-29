@@ -146,24 +146,15 @@ section {
   border: 2px #f2f2f2 solid;
   border-radius: 25px;
   display: flex;
-  justify-content: space-between;
+  padding-left: 0;
   align-items: center;
   font-weight: bold;
-  transition-property: background-color;
-  transition-duration: 750ms;
-}
-
-.disabled-filter {
+  transition: 0.7s;
   background-color: white;
-  padding: 0;
-  padding-right: 10px;
 }
 
-.enabled-filter {
-  background-color: ##deebff;
-  padding: 0;
-  padding-left: 10px;
-  flex-direction: row-reverse;
+#filters button:hover {
+  background-color: #f2f2f2;
 }
 
 #filters button:nth-child(1) {
@@ -201,6 +192,7 @@ section {
 }
 #filters button span {
   font-size: 0.8rem;
+  margin-left: 8px;
 }
 
 #host-avalaible {
@@ -248,6 +240,35 @@ section {
   nav > a:hover {
     border-bottom: inherit;
     border-top: 4px #0065fc solid;
+  }
+
+  section {
+    padding: 2% 0;
+  }
+
+  #search-bar {
+    width: 35%;
+    font-size: 1.2rem;
+  }
+  #search-button {
+    width: 40%;
+    padding: 0;
+  }
+  #search-button-mobile {
+    display: none;
+  }
+  #search-button-desktop {
+    display: flex;
+  }
+
+  #filters {
+    margin-left: 2%;
+  }
+
+  #filtres-container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
   }
 }
 
