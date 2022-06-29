@@ -345,6 +345,10 @@ main {
   box-shadow: 0px 0px 10px grey;
   text-decoration: none;
 }
+.activities-cards-grouped {
+  display: flex;
+  flex-direction: column;
+}
 .activities-card-img {
   width: 100%;
   height: 70%;
@@ -452,6 +456,39 @@ main {
   }
   .hostings-card-content-title {
     font-size: 0.8rem;
+  }
+  #activities {
+    padding: 0;
+  }
+  #activities-cards-container {
+    flex-direction: row;
+    justify-content: space-between;
+    height: 480px;
+  }
+
+  .activites-card {
+    margin: 0;
+  }
+
+  .activities-cards-grouped {
+    width: 22%;
+    justify-content: space-between;
+  }
+  .activites-card-big {
+    width: 22%;
+    height: 100%;
+  }
+  .activites-card-medium {
+    width: 100%;
+    height: 65%;
+  }
+  .activites-card-small {
+    width: 100%;
+    height: 30%;
+  }
+
+  .activities-card-img {
+    height: 90%;
   }
   .activities-card-title {
     font-size: 0.8rem;
